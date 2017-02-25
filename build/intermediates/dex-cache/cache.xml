@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="2b20eba5054455274bbd87f43ea1ca1c8db99a15">
+        <dex dex="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1edf9edaac176fcbcc54c7b03f68922e88173b47\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_9073103b73355ef3e6de55f9e7364c5881f11f54\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_1177fcae11dad80fbaa1e1ab257ebfc78e2ebfd6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_4444ab405175b09e6209d8fb5fd6448b66477c94\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_bab05294728b4781659c7e92425911dd230f1126\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_c1042dabe5790b037db7dbadc116f4865c2d3f84\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\aaron\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_edb87ce84bccbd7d7b17d25fc73a4a7e49ae6a8d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="12af0775705d65df039435c04a719a24bb53cdc2">
+        <dex dex="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_9cd77577f5c03f353dadcb4dd49b810de19f5e32\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_2dceac42074a8f2c2f1438c28b97e20e4273d43e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Development\AndroidStudioProjects\pickbot\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_30d185d44ce6929a65ea63c359e90003f5d35fd6\classes.dex" />
+    </item>
+
+</items>
