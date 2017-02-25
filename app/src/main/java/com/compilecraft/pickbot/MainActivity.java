@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.ArrayAdapter;
@@ -75,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
                 decisionDialog.show();
 
 
+
+
             }
         });
 
@@ -104,10 +107,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void addToTopicList(String topic){
         mobileArray.add(topic);
-        ArrayAdapter adapter = new ArrayAdapter<String>(this,
+        final ArrayAdapter adapter = new ArrayAdapter<String>(this,
                 R.layout.activity_listview, mobileArray);
         ListView listView = (ListView) findViewById(R.id.mobile_list);
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String elementSelected = "You selected " +
+                        String.valueOf(parent.getItemAtPosition(position));
+                Toast.makeText(MainActivity.this,elementSelected,Toast.LENGTH_SHORT).show();
+            }
+        });
         Toast.makeText(getApplicationContext(), "༼ つ ◕_◕ ༽つ " + mobileArray.get(mobileArray.size()-1).toString() +" added...", Toast.LENGTH_SHORT).show();
     }
 }
