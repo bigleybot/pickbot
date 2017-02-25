@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.ArrayAdapter;
@@ -67,10 +68,11 @@ public class MainActivity extends AppCompatActivity {
                                 });
 
                 // create alert dialog
-                AlertDialog alertDialog = alertDialogBuilder.create();
-
+                AlertDialog decisionDialog = alertDialogBuilder.create();
+                //set decisionDialog to show keyboard automagically
+                decisionDialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
                 // show it
-                alertDialog.show();
+                decisionDialog.show();
 
 
             }
