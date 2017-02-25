@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 // set dialog message
                 alertDialogBuilder
                         .setCancelable(false)
-                        .setPositiveButton("OK",
+                        .setPositiveButton("Add",
                                 new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog,int id) {
                                         // get user input and set it to result
@@ -108,6 +108,6 @@ public class MainActivity extends AppCompatActivity {
                 R.layout.activity_listview, mobileArray);
         ListView listView = (ListView) findViewById(R.id.mobile_list);
         listView.setAdapter(adapter);
-        Toast.makeText(getApplicationContext(), mobileArray.get(mobileArray.size()-1).toString() +" added...", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "༼ つ ◕_◕ ༽つ  " + mobileArray.get(mobileArray.size()-1).toString() +" added...",  Toast.LENGTH_SHORT).show();
     }
 }
