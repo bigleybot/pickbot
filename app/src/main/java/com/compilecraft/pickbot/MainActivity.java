@@ -108,6 +108,6 @@ public class MainActivity extends AppCompatActivity {
                 R.layout.activity_listview, mobileArray);
         ListView listView = (ListView) findViewById(R.id.mobile_list);
         listView.setAdapter(adapter);
-        Toast.makeText(getApplicationContext(), mobileArray.get(mobileArray.size()-1).toString() +" added...", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "༼ つ ◕_◕ ༽つ " + mobileArray.get(mobileArray.size()-1).toString() +" added...", Toast.LENGTH_SHORT).show();
     }
 }
