@@ -12,10 +12,27 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.compilecraft.pickbot.MainActivity"
     tools:showIn="@layout/activity_main">
-
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+    android:text="Decisions"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView"
+    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true" />
     <ListView
         android:id="@+id/mobile_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
     </ListView>
+
+
+
+</LinearLayout>
+
+
+
 </RelativeLayout>
