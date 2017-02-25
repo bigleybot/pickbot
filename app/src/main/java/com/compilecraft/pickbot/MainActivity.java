@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 // set dialog message
                 alertDialogBuilder
                         .setCancelable(false)
-                        .setPositiveButton("OK",
+                        .setPositiveButton("Add",
                                 new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog,int id) {
                                         // get user input and set it to result
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                                         addToTopicList(userInput.getText().toString());
                                     }
                                 })
-                        .setNegativeButton("Cancel",
+                        .setNegativeButton("Nevermind",
                                 new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog,int id) {
                                         dialog.cancel();
