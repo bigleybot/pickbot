@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // get prompts.xml view
                 LayoutInflater li = LayoutInflater.from(context);
-                View promptsView = li.inflate(R.layout.dialog_newtopic, null);
+                View promptsView = li.inflate(R.layout.dialog_newdecision, null);
 
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                         context);
