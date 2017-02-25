@@ -5,14 +5,12 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.ArrayAdapter;
@@ -75,27 +73,9 @@ public class MainActivity extends AppCompatActivity {
                 alertDialog.show();
 
 
-
-
-
-
-
-
-                //addToTopicList("New Topic");
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
             }
         });
 
-//        for(int i=1; i < numberOfElements;i++){
-//        mobileArray.add("Topic "+ i);
-//            System.out.println("Adding topic "+ i +" to list");
-//        }
-//        ArrayAdapter adapter = new ArrayAdapter<String>(this,
-//                R.layout.activity_listview, mobileArray);
-//
-//        ListView listView = (ListView) findViewById(R.id.mobile_list);
-//        listView.setAdapter(adapter);
     }
 
     @Override
@@ -124,9 +104,8 @@ public class MainActivity extends AppCompatActivity {
         mobileArray.add(topic);
         ArrayAdapter adapter = new ArrayAdapter<String>(this,
                 R.layout.activity_listview, mobileArray);
-
         ListView listView = (ListView) findViewById(R.id.mobile_list);
         listView.setAdapter(adapter);
-        Toast.makeText(getApplicationContext(), "Nomnomnom new topic added...", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), mobileArray.get(0).toString() +" added...", Toast.LENGTH_SHORT).show();
     }
 }
