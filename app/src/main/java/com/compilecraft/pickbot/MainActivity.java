@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 // get prompts.xml view
                 LayoutInflater li = LayoutInflater.from(context);
                 View promptsView = li.inflate(R.layout.dialog_newtopic, null);
@@ -57,8 +56,10 @@ public class MainActivity extends AppCompatActivity {
                                     public void onClick(DialogInterface dialog,int id) {
                                         // get user input and set it to result
                                         // edit text
-                                        EditText result = null;
-                                        addToTopicList(userInput.getText().toString());
+                                        //EditText result = null;
+                                        Decision decision = new Decision();
+                                        decision.setName(userInput.getText().toString());
+                                        addToDecisionList(decision);
                                     }
                                 })
                         .setNegativeButton("Nevermind",
@@ -105,8 +106,8 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void addToTopicList(String topic){
-        mobileArray.add(topic);
+    public void addToDecisionList(Decision decision){
+        mobileArray.add(decision.getName());
         final ArrayAdapter adapter = new ArrayAdapter<String>(this,
                 R.layout.activity_listview, mobileArray);
         ListView listView = (ListView) findViewById(R.id.mobile_list);
