@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_choice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.compilecraft.pickbot.ChoiceActivity">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Choices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/choice_textview"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="354dp"
+            android:id="@+id/choice_listview"
+            android:layout_weight="0.35" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

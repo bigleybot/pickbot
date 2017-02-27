@@ -3,6 +3,7 @@ package com.compilecraft.pickbot;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -22,7 +23,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     final Context context = this;
-    int numberOfElements = 20;
     ArrayList mobileArray = new ArrayList();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
 
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                         context);
+
+
+
+
 
                 // set prompts.xml to alertdialog builder
                 alertDialogBuilder.setView(promptsView);
@@ -106,11 +110,11 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void addToDecisionList(Decision decision){
+    public void addToDecisionList(final Decision decision){
         mobileArray.add(decision.getName());
         final ArrayAdapter adapter = new ArrayAdapter<String>(this,
                 R.layout.activity_listview, mobileArray);
-        ListView listView = (ListView) findViewById(R.id.mobile_list);
+        ListView listView = (ListView) findViewById(R.id.decision_list);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -118,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String elementSelected = "You selected " +
                         String.valueOf(parent.getItemAtPosition(position));
+                startActivity(new Intent(MainActivity.this, ChoiceActivity.class));
                 Toast.makeText(MainActivity.this,elementSelected,Toast.LENGTH_SHORT).show();
             }
         });
